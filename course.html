@@ -1,9 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mozilla RCC at Marian</title>
+    <title>Course - Mozilla RCC at Marian</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Equitable Digital Access Course by Marian College Kuttikanam in partnership with Mozilla RCC focuses on digital accessibility and inclusiveness for persons with disabilities.">
+    <meta name="keywords" content="Equitable Digital Access, Equitable Digital Access Course, Certificate Course, Digital Accessibility, Mozilla RCC, Marian College, Accessibility Curriculum, Inclusiveness, Ethics in Computing">
+    <meta name="author" content="Marian College Kuttikanam Autonomous">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Mozilla RCC at Marian - Equitable Digital Access">
+    <meta property="og:description" content="Enroll in the Equitable Digital Access Course with Mozilla RCC to promote equal opportunities and inclusivity for individuals with disabilities..">
+    <meta property="og:image" content="images/marian-college.png">
+    <meta property="og:url" content="https://marianmozillarcc.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Course - Mozilla RCC at Marian">
+    <meta name="twitter:description" content="Enroll in the Equitable Digital Access Course with Mozilla RCC to promote equal opportunities and inclusivity for individuals with disabilities..">
+    <meta name="twitter:image" content="images/marian-college.png">
+
+    <meta property="og:title" content="Course - RCC at Marian">
+    <meta property="og:description" content="Learn about our certificate course on Equitable Digital Access for persons with disabilities. This course is offered by Mozilla RCC in partnership with Marian College.">
+    <meta property="og:image" content="images/course-image.png">
+    <meta property="og:url" content="https://marianmozillarcc.com/course">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla RCC at Marian">
+
 
     <link rel="icon" type="image/x-icon" href="images/marian-college.png">
     
@@ -73,8 +99,12 @@
         opacity: 0;
       }
 
-      .btn1:focus {
-        outline: none;
+      .btn1:focus, 
+      .navbar-toggler:focus {
+          outline: 2px solid #007bff;
+          outline-offset: 2px;
+          border-radius: 4px; 
+          transition: none;
       }
 
       .btn1:active .icon {
@@ -85,6 +115,15 @@
       .hero-wrap .col-md-7 {
         margin-top: -50px;  
       }
+  @media (max-width: 768px) {
+    .hero-wrap .col-md-7 {
+      margin-top: 0;
+    }
+    .hero-wrap .col-md-12 {
+      padding: 20px;
+    }
+  }
+
 
 
     </style>
@@ -95,7 +134,9 @@
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
    
-        <button class="btn1 navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" aria-controls="navbarContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
           <span class="icon">
               <svg viewBox="0 0 175 80" width="40" height="40">
                   <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -184,6 +225,17 @@
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Events</h2>
+
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/conclave.avif);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="event.html#conclave">Global Conclave</a></h3>
+                  <div class="meta">
+                    <div><span class="icon-calendar"></span> Oct, 2024</div>
+                  </div>
+                </div>
+              </div>
+
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/panel_discussion.avif);"></a>
                 <div class="text">
@@ -193,17 +245,6 @@
                   </div>
                 </div>
               </div>
-
-              <!--
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/marian_eve.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">International Conference on Equitable Digital Access (ICEDA)</a></h3>
-                  <div class="meta">
-                    <div><span class="icon-calendar"></span> Feb, 2025</div>
-                  </div>
-                </div>
-              </div>-->
 
             </div>
           </div>
@@ -235,7 +276,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p>Copyright &copy 2024 | Meet the <a href="https://github.com/Mr1-D3CRYPT" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
+            <p>Copyright &copy 2024 | Meet the <a href="devs/index.html" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
           </div>
         </div>
       </div>
@@ -261,7 +302,6 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
     

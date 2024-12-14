@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mozilla RCC at Marian</title>
+    <title>Events - Mozilla RCC at Marian</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Equitable Digital Access initiative by Marian College Kuttikanam in partnership with Mozilla RCC focuses on digital accessibility and inclusiveness for persons with disabilities.">
+    <meta name="author" content="Marian College Kuttikanam Autonomous">
+    <meta name="keywords" content="Equitable Digital Access, Events, Certificate Course, Digital Accessibility, Mozilla RCC Events, Marian College, Accessibility Curriculum, Inclusiveness, Ethics in Computing">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags (for better social media sharing) -->
+    <meta property="og:title" content="Events - Mozilla RCC at Marian">
+    <meta property="og:description" content="Events by Mozilla RCC at Marian">
+    <meta property="og:image" content="images/marian-college.png">
+    <meta property="og:url" content="https://marianmozillarcccom">
+    
+    <!-- Twitter Card Meta Tags (for Twitter sharing) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Events - Mozilla RCC at Marian">
+    <meta name="twitter:description" content="Events by Mozilla RCC at Marian">
+    <meta name="twitter:image" content="images/marian-college.png">
+    <meta name="twitter:url" content="https://marianmozillarcc.com">
 
     <link rel="icon" type="image/x-icon" href="images/marian-college.png">
     
@@ -83,8 +101,12 @@
         opacity: 0;
       }
 
-      .btn1:focus {
-        outline: none;
+      .btn1:focus, 
+      .navbar-toggler:focus {
+          outline: 2px solid #007bff;
+          outline-offset: 2px;
+          border-radius: 4px; 
+          transition: none;
       }
 
       .btn1:active .icon {
@@ -128,8 +150,9 @@
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
    
-        <button class="btn1 navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-          <span class="icon">
+        <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" aria-controls="navbarContent" 
+        aria-expanded="false" aria-label="Toggle navigation">          <span class="icon">
               <svg viewBox="0 0 175 80" width="40" height="40">
                   <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
                   <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -226,7 +249,7 @@
         </div>
     
         <div class="row">
-          <div class="col-md-4 mb-4" id="Panel">
+          <div class="col-md-4 mb-4" id="panel">
             <div class="card past-event-card shadow-sm h-100">
               <div class="card-img-top" style="background-image: url('images/panel_discussion.avif'); height: 250px; background-size: cover; background-position: center;"></div>
               <div class="card-body">
@@ -244,24 +267,23 @@
             </div>
           </div>
           
-          <!--
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4" id="conclave">
             <div class="card past-event-card shadow-sm h-100">
-              <div class="card-img-top" style="background-image: url('images/marian_eve.jpg'); height: 250px; background-size: cover; background-position: center;"></div>
+              <div class="card-img-top" style="background-image: url('images/conclave.avif'); height: 250px; background-size: cover; background-position: center;"></div>
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-3">
-                  <small class="text-muted">Nov. 12, 2024</small>
+                  <small class="text-muted">Oct. 22, 2024</small>
                 </div>
-                <h5 class="card-title">Workshop for 1st Year BCA Students</h5>
+                <h5 class="card-title">Mozilla Responsible Computing Challenge Global Conclave</h5>
                 <p class="card-text text-muted">
-                  <i class="icon-map-o mr-2"></i>Marian College Campus
+                  <i class="icon-map-o mr-2"></i>Gokulam Grand Resort and Spa, Kumarakom, Kerala
                 </p>
                 <button type="button" class="btn btn-outline-secondary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#eventModal2">
                   Know More <i class="ion-ios-arrow-forward"></i>
                 </button>
               </div>
             </div>
-          </div>-->
+          </div>
 
         </div>
       </div>
@@ -290,21 +312,17 @@
       </div>
     </div>
     
-    <!-- Modal 2 
+    <!-- Modal 2 -->
     <div class="modal fade" id="eventModal2" tabindex="-1" aria-labelledby="eventModal2Label" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="eventModal2Label">Panel Discussion Details</h5>
+            <h5 class="modal-title" id="eventModal2Label">Mozilla Responsible Computing Challenge Global Conclave</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <p>
-              A panel discussion on “Shaping Perspectives: Disability Narratives, Societal Perceptions, and Accessible Design” will be held on 8th October of 2024 at Marian College Kuttikkanam Autonomous conducted by first year BCA  students in collaboration with Responsible Computing Challenge (RCC), Mozilla. The panellists are Dr. Joshin Joseph Assistant Professor, Department of Commerce, Marian College Kuttikanam,  Mr. Kurian E J, Head Master, Gov. Higher Secondary School for the Visual Impairment, Olessa Kottayam,  Mr. Amal George MSW student LISSAH, Calicut, Ms. Kavya, Assistant Professor, Department of Hindi, Prajyoti Niketan College, Thrissur and a moderator.  
-            </p>
-            <p>
-              The panel discussion examined the intersection of disability narratives and accessible design. In the first hour, panellists shared personal experiences and insights into how societal perceptions, cultural representations, advocacy efforts, and persistent stereotypes influence social interactions, employment opportunities, and public policy for individuals with disabilities. The second hour focused on accessible design, highlighting its critical role in ensuring digital spaces are inclusive and equitable, addressing diverse needs, and fostering autonomy and equal participation in the digital landscape.
-            </p>
+              Mozilla’s Responsible Computing Challenge (RCC) initiative hosted the first global conclave of partners, educators, and students in Kerala, India on October 21st - 24th.The summit’s goal was to strengthen collaborations within the global RCC community, bringing together government officials, funders, students, and RCC awardees from India, Kenya, and the US.Over 100 stakeholders participated in the event, featuring keynotes, workshops, and a series of cultural events, all tethered to imagining and co-creating a sustainable future of responsible technologies.This conference gave our students a platform to actively participate, leading to fresh, youth-driven ideas on how to integrate responsible computing into everyday technology use and educational frameworks.            </p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -312,7 +330,7 @@
         </div>
       </div>
     </div>
-    -->
+
     
     <!-- Include Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
@@ -338,6 +356,17 @@
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Events</h2>
+
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/conclave.avif);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="event.html#conclave">Global Conclave</a></h3>
+                  <div class="meta">
+                    <div><span class="icon-calendar"></span> Oct, 2024</div>
+                  </div>
+                </div>
+              </div>
+
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/panel_discussion.avif);"></a>
                 <div class="text">
@@ -347,17 +376,6 @@
                   </div>
                 </div>
               </div>
-
-              <!--
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/marian_eve.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">International Conference on Equitable Digital Access (ICEDA)</a></h3>
-                  <div class="meta">
-                    <div><span class="icon-calendar"></span> Feb, 2025</div>
-                  </div>
-                </div>
-              </div>-->
 
             </div>
           </div>
@@ -389,11 +407,12 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p>Copyright &copy 2024 | Meet the <a href="https://github.com/Mr1-D3CRYPT" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
+            <p>Copyright &copy 2024 | Meet the <a href="devs/index.html" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
           </div>
         </div>
       </div>
     </footer>
+    
     
   
 

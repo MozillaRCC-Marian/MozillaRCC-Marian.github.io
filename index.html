@@ -5,26 +5,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="description" content="Explore the Mozilla Responsible Computing Challenge at Marian College Kuttikkanam, promoting ethical, inclusive, and responsible computing education.">
+    <meta name="keywords" content="Mozilla RCC, Responsible Computing Challenge, Equitable Digital Access, Marian College, Accessibility, Inclusive Computing, Ethics in Technology">
+    <meta name="author" content="Marian College Kuttikkanam Kuttikanam Autonomous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Mozilla RCC at Marian">
+    <meta property="og:description" content="Explore ethical and inclusive computing initiatives at Marian College as part of the Mozilla Responsible Computing Challenge.">
+    <meta property="og:image" content="images/marian-college.png">
+    <meta property="og:url" content="https://marianmozillarcc.com">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mozilla RCC at Marian">
+    <meta name="twitter:description" content="Learn about the Mozilla RCC initiative for ethical and responsible computing education at Marian College.">
+    <meta name="twitter:image" content="images/marian-college.png">
+
+    <meta property="og:title" content="Mozilla RCC at Marian - Equitable Digital Access">
+    <meta property="og:description" content="Join our initiative to ensure digital accessibility for persons with disabilities, in partnership with Mozilla RCC and Marian College Kuttikanam.">
+    <meta property="og:image" content="images/marian-college.png">
+    <meta property="og:url" content="https://marianmozillarcc.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla RCC at Marian">
+
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/marian-college.png">
-    
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
+    <!-- CSS Files -->
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -73,8 +93,12 @@
         opacity: 0;
       }
 
-      .btn1:focus {
-        outline: none;
+      .btn1:focus, 
+      .navbar-toggler:focus {
+          outline: 2px solid #007bff;
+          outline-offset: 2px;
+          border-radius: 4px; 
+          transition: none;
       }
 
       .btn1:active .icon {
@@ -94,8 +118,9 @@
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
    
-        <button class="btn1 navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-          <span class="icon">
+        <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" aria-controls="navbarContent" 
+        aria-expanded="false" aria-label="Toggle navigation">          <span class="icon">
               <svg viewBox="0 0 175 80" width="40" height="40">
                   <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
                   <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -143,6 +168,30 @@
       </div>
     </div>
     
+
+    <section class="ftco-counter ftco-intro" id="section-counter" style="position: absolute; top: 650px; width: 100%;">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 color-1 align-items-stretch">
+              <div class="text">
+                <span style="font-size: large;">
+                  <i>Certificate course on Equitable Digital Access for person with disabilities</i>
+                </span>
+                <button class="btn2" onclick="window.location.href='course.html';">
+                  Click here to know more
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
     <section class="ftco-counter ftco-intro" id="section-counter" style="position: absolute; top: 650px; width: 100%;">
       <div class="container">
         <div class="row no-gutters">
@@ -163,10 +212,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
     
-
-
 
     <section class="ftco-section" style="width: 100%; padding-left: 5%; padding-right: 5%; padding-top: 8%;">
         <div class="row" style="width: 100%; margin: 0;">
@@ -311,6 +358,17 @@
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Events</h2>
+
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/conclave.avif);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="event.html#conclave">Global Conclave</a></h3>
+                  <div class="meta">
+                    <div><span class="icon-calendar"></span> Oct, 2024</div>
+                  </div>
+                </div>
+              </div>
+
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/panel_discussion.avif);"></a>
                 <div class="text">
@@ -320,17 +378,6 @@
                   </div>
                 </div>
               </div>
-
-              <!--
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/marian_eve.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">International Conference on Equitable Digital Access (ICEDA)</a></h3>
-                  <div class="meta">
-                    <div><span class="icon-calendar"></span> Feb, 2025</div>
-                  </div>
-                </div>
-              </div>-->
 
             </div>
           </div>
@@ -362,7 +409,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p>Copyright &copy 2024 | Meet the <a href="https://github.com/Mr1-D3CRYPT" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
+            <p>Copyright &copy 2024 | Meet the <a href="devs/index.html" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
           </div>
         </div>
       </div>
@@ -372,8 +419,7 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
+    
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -391,6 +437,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+
   </body>
 </html>

@@ -1,33 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mozilla RCC at Marian</title>
+    <title>Project - Mozilla RCC at Marian</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta name="description" content="Equitable Digital Access initiative by Marian College Kuttikanam in partnership with Mozilla RCC focuses on digital accessibility and inclusiveness for persons with disabilities.">
+    <meta name="keywords" content="Equitable Digital Access, Digital Accessibility, Mozilla RCC, Marian College, Accessibility Curriculum, Inclusiveness, Ethics in Computing">
+    <meta name="author" content="Marian College Kuttikanam Autonomous">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Mozilla RCC at Marian - Equitable Digital Access">
+    <meta property="og:description" content="Learn about our inclusive digital accessibility project with Mozilla RCC to ensure equal opportunities for persons with disabilities.">
+    <meta property="og:image" content="images/marian-college.png">
+    <meta property="og:url" content="https://marianmozillarcc.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mozilla RCC at Marian - Equitable Digital Access">
+    <meta name="twitter:description" content="Join our initiative for inclusive digital accessibility and equity with Marian College and Mozilla RCC.">
+    <meta name="twitter:image" content="images/marian-college.png">
+
+    <meta property="og:title" content="Project - Mozilla RCC at Marian">
+    <meta property="og:description" content="Explore our Equitable Digital Access project focused on inclusivity and accessibility for persons with disabilities, in collaboration with Mozilla RCC.">
+    <meta property="og:image" content="images/project-image.png">
+    <meta property="og:url" content="https://marianmozillarcc.com/project">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla RCC at Marian">
+
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/marian-college.png">
-    
+
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
+    <!-- CSS Libraries -->
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data (JSON-LD for SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Marian College Kuttikanam",
+      "url": "https://yourwebsiteurl.com",
+      "logo": "https://yourwebsiteurl.com/images/marian-college.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Kuttikkanam P.O, Peermade",
+        "addressLocality": "Idukki District",
+        "addressRegion": "Kerala",
+        "addressCountry": "India"
+      },
+      "description": "Equitable Digital Access initiative aimed at fostering digital inclusiveness for persons with disabilities.",
+      "sameAs": [
+        "https://facebook.com/marian-college",
+        "https://twitter.com/marian-college",
+        "https://linkedin.com/school/marian-college"
+      ]
+    }
+    </script>
 
     <style>
 
@@ -73,8 +120,12 @@
         opacity: 0;
       }
 
-      .btn1:focus {
-        outline: none;
+      .btn1:focus, 
+      .navbar-toggler:focus {
+          outline: 2px solid #007bff;
+          outline-offset: 2px;
+          border-radius: 4px; 
+          transition: none;
       }
 
       .btn1:active .icon {
@@ -94,8 +145,9 @@
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
    
-        <button class="btn1 navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-          <span class="icon">
+        <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" 
+        data-bs-target="#navbarContent" aria-controls="navbarContent" 
+        aria-expanded="false" aria-label="Toggle navigation">          <span class="icon">
               <svg viewBox="0 0 175 80" width="40" height="40">
                   <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
                   <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
@@ -219,6 +271,17 @@
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Recent Events</h2>
+
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/conclave.avif);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="event.html#conclave">Global Conclave</a></h3>
+                  <div class="meta">
+                    <div><span class="icon-calendar"></span> Oct, 2024</div>
+                  </div>
+                </div>
+              </div>
+
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/panel_discussion.avif);"></a>
                 <div class="text">
@@ -228,17 +291,6 @@
                   </div>
                 </div>
               </div>
-
-              <!--
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/marian_eve.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">International Conference on Equitable Digital Access (ICEDA)</a></h3>
-                  <div class="meta">
-                    <div><span class="icon-calendar"></span> Feb, 2025</div>
-                  </div>
-                </div>
-              </div>-->
 
             </div>
           </div>
@@ -270,11 +322,12 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p>Copyright &copy 2024 | Meet the <a href="https://github.com/Mr1-D3CRYPT" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
+            <p>Copyright &copy 2024 | Meet the <a href="devs/index.html" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
           </div>
         </div>
       </div>
     </footer>
+    
     
   
 
