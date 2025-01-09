@@ -120,6 +120,8 @@
 
     <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
 
+    <head role="banner">
+
     <nav class="navbar navbar-expand-lg fixed-top" id="ftco-navbar" style="background-color: white;">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo of Mozilla RCC"></a>
@@ -176,30 +178,9 @@
       </div>
     </div>
     
+  </head>
 
-        <!--
-
-    <section class="ftco-counter ftco-intro" id="section-counter" style="position: absolute; top: 650px; width: 100%;">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-md-5 d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 color-1 align-items-stretch">
-              <div class="text">
-                <span style="font-size: large;">
-                  <i>Certificate course on "Equitable Digital Access for person with disabilities"</i>
-                </span>
-                <button class="btn2" onclick="window.location.href='course.html';">
-                  Click here to know more
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon">
-                    <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>-->
+  <main role="main">
 
     <section class="ftco-counter ftco-intro" id="section-counter" style="position: absolute; top: 650px; width: 100%;">
       <div class="container">
@@ -210,7 +191,7 @@
                 <span style="font-size: large;">
                   <i>National Conference on Equitable Digital Access (NCEDA)</i>
                 </span>
-                <button class="btn2" onclick="window.location.href='event-single.html';">
+                <button class="btn2" onclick="window.location.href='event-single.html';" tabindex="0">
                   Click here to know more
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="15px" width="15px" class="icon">
                     <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5" stroke="#292D32" d="M8.91016 19.9201L15.4302 13.4001C16.2002 12.6301 16.2002 11.3701 15.4302 10.6001L8.91016 4.08008"></path>
@@ -272,8 +253,6 @@
           </div>
       </div>
   </section>
-  
-
 
 
     <section class="team-section py-5">
@@ -370,14 +349,16 @@
       </div>
     </section>
 
-    <footer class="ftco-footer ftco-section img">
+  </main>
+
+    <footer class="ftco-footer ftco-section img" role="contentinfo" style="color: white;">
     	<div class="overlay"></div>
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-3">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About Us</h2>
-              <p>Marian College, a leader in transformative education, partners with Mozilla to advance ethical, inclusive, and responsible computing.</p>
+              <h2 class="ftco-heading-2" style="color: white;">About Us</h2>
+              <p style="color: white;">Marian College, a leader in transformative education, partners with Mozilla to advance ethical, inclusive, and responsible computing.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
 
                 <!-- <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li> -->
@@ -387,12 +368,12 @@
           </div>
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Recent Events</h2>
+              <h2 class="ftco-heading-2" style="color: white;">Recent Events</h2>
 
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/conclave.avif);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="event.html#conclave">Global Conclave</a></h3>
+                  <h3 class="heading" style="color: white;"><a href="event.html#conclave">Global Conclave</a></h3>
                   <div class="meta">
                     <div><span class="icon-calendar"></span> Oct. 22, 2024</div>
                   </div>
@@ -402,7 +383,7 @@
               <div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/panel_discussion.avif);"></a>
                 <div class="text">
-                  <h3 class="heading"><a href="event.html#panel">Panel discussion</a></h3>
+                  <h3 class="heading" style="color: white;"><a href="event.html#panel">Panel discussion</a></h3>
                   <div class="meta">
                     <div><span class="icon-calendar"></span> Oct. 8, 2024</div>
                   </div>
@@ -413,25 +394,25 @@
           </div>
           <div class="col-md-2">
              <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Site Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="index.html" class="py-2 d-block">Home</a></li>
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
-                <li><a href="deliverables.html" class="py-2 d-block">Deliverables</a></li>
-                <li><a href="course.html" class="py-2 d-block">Course</a></li>
-                <li><a href="event.html" class="py-2 d-block">Events</a></li>
-                <li><a href="projects.html" class="py-2 d-block">Projects</a></li>
+              <h2 class="ftco-heading-2" style="color: white;">Site Links</h2>
+              <ul class="list-unstyled" >
+                <li><a href="index.html" class="py-2 d-block" style="color: white;">Home</a></li>
+                <li><a href="about.html" class="py-2 d-block" style="color: white;">About</a></li>
+                <li><a href="deliverables.html" class="py-2 d-block" style="color: white;">Deliverables</a></li>
+                <li><a href="course.html" class="py-2 d-block" style="color: white;">Course</a></li>
+                <li><a href="event.html" class="py-2 d-block" style="color: white;">Events</a></li>
+                <li><a href="projects.html" class="py-2 d-block" style="color: white;">Projects</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-3">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<h2 class="ftco-heading-2" style="color: white;">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Kuttikkanam P.O, Peermade, Idukki District, Kerala, India</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text" style="color: white;">Kuttikkanam P.O, Peermade, Idukki District, Kerala, India</span></li>
 	                <!-- <li><span class="icon icon-phone"></span><span class="text">+91 332244 5566</span></li> -->
-	                <li><span class="icon icon-envelope"></span><span class="text">rcc@mariancollege.org</span></li>
+	                <li><span class="icon icon-envelope"></span><span class="text" style="color: white;">rcc@mariancollege.org</span></li>
 	              </ul>
 	            </div>
             </div>
@@ -440,7 +421,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p>Copyright &copy 2024 | Meet the <a href="devs/index.html" target="_blank"><strong style="color: rgb(234, 55, 115);">Devs    </strong></a></p>
+            <p style="color: white;">Copyright &copy 2024 | Meet the <a href="devs/index.html" target="_blank"><strong style="color: orange;">Devs    </strong></a></p>
           </div>
         </div>
       </div>
