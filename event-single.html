@@ -102,6 +102,12 @@
         margin-top: -50px;  
       }
 
+
+      .card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
     </style>
 
   </head>
@@ -159,25 +165,29 @@
     
     <main role="main">
 
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
-        <div class="col-md-7 ftco-animate text-center" data-scrollax="properties: { translateY: '70%' }">
-          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">National Conference on Equitable Digital Access</h1>
-          <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: black;">February 10-12, 2025 | Marian College Kuttikkanam Autonomous</p>
+      <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-7 ftco-animate text-center" data-scrollax="properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">National Conference on Equitable Digital Access</h1>
+            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: black;">February 10-12, 2025 | Marian College Kuttikkanam Autonomous</p>
+            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">Conducted by: Ug Department of Computer Applications in association with Mozilla RCC</p>
+          </div>
+        </div>
+      
+        <!-- Scroll Indicator -->
+        <div id="scrollIndicator" class="main__action" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center;">
+          <a class="main__scroll" href="#about1" style="cursor: pointer; display: inline-block; text-align: center;">
+            <span class="main__scroll-text" style="display: block; margin-top: 10px; color: black; font-size: 14px; font-weight: bold;">Know more</span>
+            <div class="main__scroll-box" style="display: inline-block; text-align: center;">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px; fill: rgba(0, 0, 0, 1);">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"></path>
+              </svg>
+            </div>
+          </a>
         </div>
       </div>
-
-      <div id="scrollIndicator" class="main__action" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center;">
-        <a class="main__scroll" href="#about1" style="cursor: pointer; display: inline-block; text-align: center;">
-          <span class="main__scroll-text" style="display: block; margin-top: 10px; color: black; font-size: 14px; font-weight: bold;">Know  more</span>
-          <div class="main__scroll-box" style="display: inline-block; text-align: center;">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px; fill: rgba(0, 0, 0, 1);">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"></path>
-            </svg>
-          </div>
-        </a>
-      </div>
+      
       
       <script>
         // Get the scroll indicator element
@@ -198,12 +208,68 @@
         });
       </script>
     </div>
+
+
+    <div class="container my-5">
+      <div class="row">
+        <!-- Call for Papers -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100" style="border: 2px solid #ff5e00; border-radius: 10px;">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #ff5e00; font-weight: bold;">Call for Papers</h5>
+              <p class="card-text" style="color: #333; margin-top: 15px;">
+                Submit your research and ideas on the given topics.
+              </p>
+              <a href="#call-for-papers" class="btn btn-outline-success btn-sm mt-3" style="border-radius: 20px; border-color: orange; color: orange;">
+                Know More <i class="ion-ios-arrow-forward"></i>
+              </a>              
+            </div>
+          </div>
+        </div>
+    
+        <!-- Post-Conference Workshop -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100" style="border: 2px solid #4caf50; border-radius: 10px;">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #4caf50; font-weight: bold;">Post-Conference Workshop</h5>
+              <p class="card-text" style="color: #333; margin-top: 15px;">
+                Join hands-on sessions on Responsible AI in Education and Learning.
+              </p>
+              <a href="#workshop-section" class="btn btn-outline-success btn-sm mt-3" style="border-radius: 20px;">
+                Know More <i class="ion-ios-arrow-forward"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+    
+        <!-- Ideathon -->
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100" style="border: 2px solid #007bff; border-radius: 10px;">
+            <div class="card-body text-center">
+              <h5 class="card-title" style="color: #007bff; font-weight: bold;">Ideathon</h5>
+              <p class="card-text" style="color: #333; margin-top: 15px;">
+                Pitch your digital solutions for persons with disabilities.<br>
+                Win attractive prizes.
+              </p>
+              <button type="button" class="btn btn-outline-primary btn-sm mt-3" style="border-radius: 20px;" data-bs-toggle="modal" data-bs-target="#ideathonModal">
+                Know More <i class="ion-ios-arrow-forward"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
     
     
     <div class="container">
+      <!-- About the Conference Section -->
       <div class="row justify-content-center mb-3 pb-2">
         <div class="col-md-7 heading-section ftco-animate text-center">
-          <h2 class="mb-3" style="color: rgb(255, 94, 0); font-weight: normal;"  id="about1">About the Conference</h2>
+          <h2 class="mb-3" style="color: rgb(255, 94, 0); font-weight: normal;" id="about1">About the Conference</h2>
         </div>
       </div>
       <div class="row">
@@ -213,7 +279,8 @@
           </p>
         </div>
       </div>
-    </div>
+    
+    
     
     <div class="container" style="margin-top: 40px;"> <!-- Increased space between containers -->
       <div class="row justify-content-center mb-3 pb-2">
@@ -435,7 +502,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6" id="workshop-section">
             <div class="card mb-4" style="border: 2px solid #000; border-radius: 8px;">
               <div class="card-body" style="background-color: #ffffff; color: #000;">
                 <h3 style="font-weight: bold;">Workshop</h3>
