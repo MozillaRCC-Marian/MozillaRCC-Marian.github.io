@@ -104,10 +104,28 @@
 
 
       .card:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-}
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+      }
 
+        .brochure-btn {
+          background-color: rgb(255, 94, 0);
+          border: none;
+          padding: 12px 25px;
+          font-size: 16px;
+          border-radius: 5px;
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+      
+        .brochure-btn:hover {
+          background-color: rgb(230, 85, 0); 
+          color: white; 
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+  
     </style>
 
   </head>
@@ -168,17 +186,39 @@
       <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate text-center" data-scrollax="properties: { translateY: '70%' }">
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">National Conference on Equitable Digital Access</h1>
-            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: black;">February 10-12, 2025 | Marian College Kuttikkanam Autonomous</p>
-            <p class="mb-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">Conducted by: Ug Department of Computer Applications in association with Mozilla RCC</p>
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">
+              National Conference on Equitable Digital Access
+            </h1>
+            <p class="mb-3" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: black;">
+              February 10-12, 2025 | Marian College Kuttikkanam Autonomous
+            </p>
+            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: rgb(255, 94, 0);">
+              Conducted by: UG Department of Computer Applications in association with Mozilla RCC
+            </p>
+      
+            <!-- Download Brochure Button (Centered) -->
+            <div class="mb-4">
+              <a href="syllabus/brochure.pdf" download class="btn btn-primary brochure-btn">
+                📄 Download Brochure
+              </a>
+            </div>
           </div>
         </div>
       
-        <!-- Scroll Indicator -->
-        <div id="scrollIndicator" class="main__action" style="position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); text-align: center;">
-          <a class="main__scroll" href="#cards-new" style="cursor: pointer; display: inline-block; text-align: center;">
-            <span class="main__scroll-text" style="display: block; margin-top: 10px; color: black; font-size: 14px; font-weight: bold;">Know more</span>
-            <div class="main__scroll-box" style="display: inline-block; text-align: center;">
+        <!-- Scroll Indicator (Fixed Centering with Fade on Scroll) -->
+        <div id="scrollIndicator" style="
+          position: absolute; 
+          bottom: 30px; 
+          width: 100%; 
+          display: flex; 
+          justify-content: center; 
+          opacity: 1;
+          transition: opacity 0.5s ease-in-out;">
+          <a class="main__scroll" href="#cards-new" style="cursor: pointer; text-align: center;">
+            <span class="main__scroll-text" style="display: block; margin-top: 10px; color: black; font-size: 14px; font-weight: bold;">
+              Know more
+            </span>
+            <div class="main__scroll-box" style="text-align: center;">
               <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 40px; height: 40px; fill: rgba(0, 0, 0, 1);">
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"></path>
@@ -188,30 +228,23 @@
         </div>
       </div>
       
-      
+      <!-- JavaScript to Hide Scroll Indicator on Scroll -->
       <script>
-        // Get the scroll indicator element
-        const scrollIndicator = document.getElementById('scrollIndicator');
-      
-        // Function to hide the scroll indicator when page is scrolled down
-        window.addEventListener('scroll', function() {
-          if (window.scrollY > 100) { // Change 100 to any value where you'd like it to disappear
-            scrollIndicator.style.display = 'none';
+        window.addEventListener("scroll", function () {
+          var scrollIndicator = document.getElementById("scrollIndicator");
+          if (window.scrollY > 100) { // Adjust the scroll threshold as needed
+            scrollIndicator.style.opacity = "0"; // Hide on scroll
           } else {
-            scrollIndicator.style.display = 'block';
+            scrollIndicator.style.opacity = "1"; // Show when at the top
           }
         });
-      
-        // Function to hide the scroll indicator when it's clicked
-        document.querySelector('.main__scroll').addEventListener('click', function() {
-          scrollIndicator.style.display = 'none';
-        });
       </script>
-    </div>
-
+            
+      
 
     <div class="container my-5">
       <div class="row">
+
         <!-- Call for Papers -->
         <div class="col-md-4 mb-4" id="cards-new">
           <div class="card shadow h-100" style="border: 2px solid #ff5e00; border-radius: 10px;">
@@ -252,12 +285,13 @@
                 Pitch your digital solutions for persons with disabilities.<br>
                 Win attractive prizes.
               </p>
-              <button type="button" class="btn btn-outline-primary btn-sm mt-3" style="border-radius: 20px;" data-bs-toggle="modal" data-bs-target="#ideathonModal">
+              <a href="https://drive.google.com/file/d/1i-cS0KmJsav2fRUptT1ktyIWNPupIcp9/view" target="_blank" class="btn btn-outline-primary btn-sm mt-3" style="border-radius: 20px;">
                 Know More <i class="ion-ios-arrow-forward"></i>
-              </button>
+              </a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
     
@@ -495,9 +529,9 @@
               <div class="card-body" style="background-color: #ffffff; color: #000;">
                 <h3 style="font-weight: bold;">Symposia</h3>
                 <ol class="list-unstyled" style="font-size: 16px; line-height: 1.8; color: #000;">
-                  <li>1. <strong><em>Technology for Accessibility and Digital Inclusion:</em></strong></li>
-                  <li>2. <strong><em>Responsible AI in building digital inclusivity:</em></strong></li>
-                  <li>3. <strong><em>Building Bridges: Cultivating an Inclusive Tech Ecosystem for Innovation and Equity</em></strong> - </li>
+                  <li>1. <strong><em>Technology for Accessibility and Digital Inclusion</em></strong></li>
+                  <li>2. <strong><em>Responsible AI in building digital inclusivity</em></strong></li>
+                  <li>3. <strong><em>Building Bridges: Cultivating an Inclusive Tech Ecosystem for Innovation and Equity</em></strong> </li>
                 </ol>
               </div>
             </div>
