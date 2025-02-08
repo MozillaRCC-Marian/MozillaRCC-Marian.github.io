@@ -138,7 +138,33 @@
   <body>
 
     <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
+    <script>
+        const observer = new MutationObserver(() => {
+            const widget = document.querySelector("#accessibility-toggle");
+            if (widget) {
+                widget.style.position = "fixed";
+                widget.style.left = "20px";
+                widget.style.bottom = "20px"; /* Align to bottom */
+                widget.style.zIndex = "9999";
+                observer.disconnect();
+            }
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
+    
+    <script> window.chtlConfig = { chatbotId: "7395624657" } </script>
+    <script async data-id="7395624657" id="chatling-embed-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+    
+    <style>
+        #chatling-embed-script {
+            position: fixed;
+            right: 20px;
+            bottom: 20px; 
+            z-index: 9999;
+        }
+    </style>
 
+    
     <header role="banner">
 
     <nav class="navbar navbar-expand-lg fixed-top" id="ftco-navbar" style="background-color: white;">
