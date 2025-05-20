@@ -1,0 +1,275 @@
+/* base.css: Contains navbar and footer styles extracted from products.html */
+
+/* Navbar styles */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+  white-space: nowrap;
+}
+
+.navbar-brand img {
+  transition: var(--transition);
+}
+
+#ftco-navbar {
+  min-height: 70px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#ftco-navbar .container-fluid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+/* Responsive navbar styling */
+@media (max-width: 991px) {
+  .navbar-brand img:first-child {
+    max-height: 60px;
+  }
+  .navbar-brand img:last-child {
+    max-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand img:first-child {
+    max-height: 40px;
+  }
+  .navbar-brand img:last-child {
+    max-height: 20px;
+    margin-right: 5px !important;
+  }
+}
+
+.container-fluid.ps-8 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar>.container-fluid {
+  flex-wrap: nowrap;
+}
+
+.navbar-brand {
+  margin-right: 0;
+}
+
+.collapse.show,
+.collapsing {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
+  padding: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  margin: 8px 0;
+}
+
+.nav-item.active .nav-link {
+  font-weight: bold;
+  border-bottom: 2px solid var(--secondary-color);
+  display: inline-block;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 15px;
+  transition: var(--transition);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  color: var(--accent-color) !important;
+}
+
+/* Footer styles */
+.ftco-footer {
+  background: #222;
+  color: #fff;
+  padding: 60px 0 30px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.ftco-footer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  z-index: 0;
+}
+
+.ftco-footer .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ftco-footer-widget {
+  margin-bottom: 30px;
+}
+
+.ftco-footer-widget h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.ftco-footer-widget ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.ftco-footer-widget ul li {
+  margin-bottom: 10px;
+}
+
+.ftco-footer-widget ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ftco-footer-widget ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.ftco-footer .block-23 ul {
+  padding-left: 0;
+}
+
+.ftco-footer .block-23 ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ftco-footer .block-23 ul li .icon {
+  margin-right: 10px;
+  color: var(--secondary-color);
+}
+
+.ftco-footer .block-23 ul li .text {
+  color: #fff;
+}
+
+.ftco-footer .text-center {
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .ftco-footer {
+    padding: 40px 0 20px 0;
+  }
+  .ftco-footer-widget {
+    margin-bottom: 20px;
+  }
+}
+
+:root {
+  --primary-color: #4169E1;
+  --secondary-color: #FF8C00;
+  --accent-color: #007BFF;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --dark-bg: #1a1a1a;
+  --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
+  line-height: 1.7;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.btn1 {
+  width: 70px;
+  height: 40px;
+  border: none;
+  transition: var(--transition);
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.btn1:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn1 .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.btn1:hover .icon {
+  width: 70px;
+}
+
+.btn1:hover .text {
+  transition: var(--transition);
+  opacity: 0;
+}
+
+.btn1:focus,
+.navbar-toggler:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: none;
+}
+
+.btn1:active .icon {
+  transform: scale(0.85);
+} /* Chatbot on the Left */
+
+#chatling-embed-script {
+  position: fixed !important;
+  left: 20px !important;
+  right: auto !important;
+  bottom: 20px !important;
+  z-index: 9999 !important;
+}
