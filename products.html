@@ -1,824 +1,857 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Products - Mozilla RCC at Marian</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-  <title>Products - Mozilla RCC at Marian</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta
+      name="description"
+      content="Discover innovative accessibility products developed at Marian College Kuttikkanam, including WebEase and eye blink navigation system." />
+    <meta
+      name="keywords"
+      content="WebEase, Eye Blink Navigation, Accessibility Products, Mozilla RCC, Marian College, Digital Accessibility" />
+    <meta name="author" content="Marian College Kuttikkanam Kuttikanam Autonomous" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <meta name="description"
-    content="Discover innovative accessibility products developed at Marian College Kuttikkanam, including WebEase and eye blink navigation system.">
-  <meta name="keywords"
-    content="WebEase, Eye Blink Navigation, Accessibility Products, Mozilla RCC, Marian College, Digital Accessibility">
-  <meta name="author" content="Marian College Kuttikkanam Kuttikanam Autonomous">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Accessibility Products - Mozilla RCC at Marian" />
+    <meta
+      property="og:description"
+      content="Discover innovative accessibility products developed at Marian College as part of the Mozilla Responsible Computing Challenge." />
+    <meta property="og:image" content="images/marian-college.png" />
+    <meta property="og:url" content="https://marianrcc.org/products.html" />
+    <meta property="og:type" content="website" />
 
-  <!-- Social Media Meta Tags -->
-  <meta property="og:title" content="Accessibility Products - Mozilla RCC at Marian">
-  <meta property="og:description"
-    content="Discover innovative accessibility products developed at Marian College as part of the Mozilla Responsible Computing Challenge.">
-  <meta property="og:image" content="images/marian-college.png">
-  <meta property="og:url" content="https://marianrcc.org/products.html">
-  <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/marian-college.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="images/marian-college.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
 
-  <!-- CSS Files -->
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/ionicons.min.css">
-  <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Additional Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
-  <!-- Additional Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-  <style>
-    /* Hero Section */
-    .hero-section {
-      position: relative;
-      height: 60vh;
-      min-height: 500px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-      background: linear-gradient(135deg, rgba(65, 105, 225, 0.9), rgba(0, 123, 255, 0.8));
-      overflow: hidden;
-      margin-top: 70px;
-    }
-
-    .hero-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('images/marian-college.png') center/cover no-repeat;
-      opacity: 0.15;
-      z-index: 0;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 800px;
-      padding: 0 20px;
-    }
-
-    .hero-title {
-      font-size: 3.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      letter-spacing: -1px;
-    }
-
-    .hero-subtitle {
-      font-size: 1.5rem;
-      font-weight: 300;
-      margin-bottom: 30px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .hero-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 30px;
-    }
-
-    .hero-btn {
-      padding: 12px 28px;
-      border-radius: 50px;
-      font-weight: 500;
-      transition: var(--transition);
-      border: none;
-      font-size: 1rem;
-    }
-
-    .hero-btn-primary {
-      background: white;
-      color: var(--primary-color);
-    }
-
-    .hero-btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .hero-btn-secondary {
-      background: transparent;
-      color: white;
-      border: 2px solid white;
-    }
-
-    .hero-btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
-      transform: translateY(-3px);
-    }
-
-    /* Product styles */
-    .product-section {
-      padding: 100px 0;
-      background-color: var(--light-bg);
-    }
-
-    .product-card {
-      border-radius: 12px;
-      box-shadow: var(--card-shadow);
-      transition: var(--transition);
-      margin-bottom: 50px;
-      overflow: hidden;
-      background: #fff;
-      border: none;
-    }
-
-    .product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    .product-header {
-      background: var(--primary-color);
-      color: white;
-      padding: 25px 30px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-header::after {
-      content: '';
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      top: -75px;
-      right: -75px;
-    }
-
-    .product-body {
-      padding: 40px;
-    }
-
-    .feature-list {
-      margin: 25px 0;
-      padding-left: 5px;
-      list-style-type: none;
-    }
-
-    .feature-list li {
-      margin-bottom: 15px;
-      position: relative;
-      padding-left: 30px;
-    }
-
-    .feature-list li:before {
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      color: var(--accent-color);
-      position: absolute;
-      left: 0;
-      top: 2px;
-    }
-
-    .code-block {
-      background: #f8f9fa;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 20px 0;
-      overflow-x: auto;
-      border-left: 4px solid var(--accent-color);
-      font-family: 'Courier New', monospace;
-      font-size: 0.9rem;
-    }
-
-    .position-options {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 20px 0;
-      gap: 10px;
-    }
-
-    .position-option {
-      padding: 8px 15px;
-      background: var(--accent-color);
-      color: white;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      transition: var(--transition);
-    }
-
-    .position-option:hover {
-      background: #0056b3;
-      transform: translateY(-2px);
-    }
-
-    .badge-patent {
-      background: #28a745;
-      color: white;
-      padding: 8px 15px;
-      border-radius: 50px;
-      display: inline-block;
-      margin-bottom: 15px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      letter-spacing: 0.5px;
-    }
-
-    .badge-dev {
-      background: var(--secondary-color);
-      color: white;
-      padding: 8px 15px;
-      border-radius: 50px;
-      display: inline-block;
-      margin-bottom: 15px;
-      font-weight: 500;
-      font-size: 0.85rem;
-      letter-spacing: 0.5px;
-    }
-
-    .github-link {
-      display: inline-flex;
-      align-items: center;
-      padding: 10px 20px;
-      background: #24292e;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: var(--transition);
-      font-weight: 500;
-    }
-
-    .github-link i {
-      margin-right: 10px;
-      font-size: 1.2rem;
-    }
-
-    .github-link:hover {
-      background: #1a1e21;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      color: white;
-    }
-
-    /* Video container */
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      /* 16:9 aspect ratio */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      background: #000;
-      margin: 25px 0;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    }
-
-    .video-container video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-    }
-
-    .video-placeholder {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #000;
-      color: white;
-      font-size: 1.2rem;
-      font-weight: 300;
-    }
-
-    /* Section titles */
-    .section-title {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .section-title h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      position: relative;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
-
-    .section-title h2:after {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 4px;
-      background: var(--secondary-color);
-      bottom: -10px;
-      left: 25%;
-      border-radius: 2px;
-    }
-
-    .section-title p {
-      color: #666;
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    /* Product feature improvements */
-    .product-details {
-      margin: 30px 0;
-    }
-
-    .product-details h3 {
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-weight: 600;
-      color: var(--primary-color);
-      font-size: 1.5rem;
-    }
-
-    .product-details h4 {
-      margin-top: 25px;
-      margin-bottom: 15px;
-      font-weight: 500;
-      font-size: 1.25rem;
-    }
-
-    /* Ensure responsive layout */
-    @media (max-width: 991px) {
-      .hero-title {
-        font-size: 2.8rem;
-      }
-
-      .hero-subtitle {
-        font-size: 1.2rem;
-      }
-
-      .product-section {
-        padding: 70px 0;
-      }
-    }
-
-    @media (max-width: 768px) {
+    <style>
+      /* Hero Section */
       .hero-section {
-        min-height: 400px;
+        position: relative;
+        height: 60vh;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        background: linear-gradient(135deg, rgba(65, 105, 225, 0.9), rgba(0, 123, 255, 0.8));
+        overflow: hidden;
+        margin-top: 70px;
+      }
+
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('images/marian-college.png') center/cover no-repeat;
+        opacity: 0.15;
+        z-index: 0;
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+        max-width: 800px;
+        padding: 0 20px;
       }
 
       .hero-title {
-        font-size: 2.2rem;
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
       }
 
       .hero-subtitle {
-        font-size: 1rem;
-      }
-
-      .product-section {
-        padding: 50px 0;
-      }
-
-      .product-body {
-        padding: 25px;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 30px;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .hero-buttons {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
       }
 
-      .section-title h2 {
-        font-size: 2rem;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .hero-section {
-        min-height: 350px;
-      }
-
-      .hero-title {
-        font-size: 1.8rem;
+      .hero-btn {
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: var(--transition);
+        border: none;
+        font-size: 1rem;
       }
 
+      .hero-btn-primary {
+        background: white;
+        color: var(--primary-color);
+      }
+
+      .hero-btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-btn-secondary {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+
+      .hero-btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-3px);
+      }
+
+      /* Product styles */
       .product-section {
-        padding: 40px 0;
+        padding: 100px 0;
+        background-color: var(--light-bg);
+      }
+
+      .product-card {
+        border-radius: 12px;
+        box-shadow: var(--card-shadow);
+        transition: var(--transition);
+        margin-bottom: 50px;
+        overflow: hidden;
+        background: #fff;
+        border: none;
+      }
+
+      .product-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .product-header {
+        background: var(--primary-color);
+        color: white;
+        padding: 25px 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .product-header::after {
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        top: -75px;
+        right: -75px;
       }
 
       .product-body {
+        padding: 40px;
+      }
+
+      .feature-list {
+        margin: 25px 0;
+        padding-left: 5px;
+        list-style-type: none;
+      }
+
+      .feature-list li {
+        margin-bottom: 15px;
+        position: relative;
+        padding-left: 30px;
+      }
+
+      .feature-list li:before {
+        content: '\f00c';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: var(--accent-color);
+        position: absolute;
+        left: 0;
+        top: 2px;
+      }
+
+      .code-block {
+        background: #f8f9fa;
         padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        overflow-x: auto;
+        border-left: 4px solid var(--accent-color);
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+      }
+
+      .position-options {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        gap: 10px;
+      }
+
+      .position-option {
+        padding: 8px 15px;
+        background: var(--accent-color);
+        color: white;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        transition: var(--transition);
+      }
+
+      .position-option:hover {
+        background: #0056b3;
+        transform: translateY(-2px);
+      }
+
+      .badge-patent {
+        background: #28a745;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 50px;
+        display: inline-block;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+      }
+
+      .badge-dev {
+        background: var(--secondary-color);
+        color: white;
+        padding: 8px 15px;
+        border-radius: 50px;
+        display: inline-block;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+      }
+
+      .github-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        background: #24292e;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: var(--transition);
+        font-weight: 500;
+      }
+
+      .github-link i {
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+
+      .github-link:hover {
+        background: #1a1e21;
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+
+      /* Video container */
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin: 25px 0;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .video-placeholder {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #000;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+
+      /* Section titles */
+      .section-title {
+        text-align: center;
+        margin-bottom: 60px;
       }
 
       .section-title h2 {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
       }
-    }
-  </style>
-</head>
 
-<body>
+      .section-title h2:after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 4px;
+        background: var(--secondary-color);
+        bottom: -10px;
+        left: 25%;
+        border-radius: 2px;
+      }
 
-  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white;">
-    <div class="container ps-8">
-      <a class="navbar-brand" href="index.html">
-        <div style="display: flex; align-items: center; justify-content: flex-start;">
-          <img src="images/marian-logo.jpg" height="60px" alt="Marian logo" class="img-fluid"
-            style="max-height: 60px;">
-          <img src="images/logo.png" height="30px" alt="logo of Mozilla RCC" class="img-fluid"
-            style="max-height: 30px;">
-        </div>
-      </a>
+      .section-title p {
+        color: #666;
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto;
+      }
 
-      <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="icon">
-          <svg viewBox="0 0 175 80" width="40" height="40">
-            <rect width="60" height="10" fill="#f0f0f0" rx="10"></rect>
-            <rect y="30" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
-            <rect y="60" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
-          </svg>
-        </span>
-      </button>
+      /* Product feature improvements */
+      .product-details {
+        margin: 30px 0;
+      }
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link" style="color: black;">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link" style="color: black;">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="deliverables.html" class="nav-link" style="color: black;">Deliverables</a>
-          </li>
-          <li class="nav-item">
-            <a href="course.html" class="nav-link" style="color: black;">Course</a>
-          </li>
-          <li class="nav-item active">
-            <a href="products.html" class="nav-link" style="color: orange;">Products</a>
-          </li>
-          <li class="nav-item">
-            <a href="event.html" class="nav-link" style="color: black;">Events</a>
-          </li>
-          <li class="nav-item">
-            <a href="projects.html" class="nav-link" style="color: black;">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="resources.html" class="nav-link" style="color: black;">Resources</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <h1 class="hero-title">Innovative Accessibility Solutions</h1>
-      <p class="hero-subtitle">Discover our patented accessibility products designed to make the digital world more
-        inclusive and equitable for everyone</p>
-      <div class="hero-buttons">
-        <a href="#products" class="hero-btn hero-btn-primary">Explore Products</a>
-        <a href="https://jerit.in" target="_blank" class="hero-btn hero-btn-secondary">Contact Developer</a>
-      </div>
-    </div>
-  </section>
+      .product-details h3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: var(--primary-color);
+        font-size: 1.5rem;
+      }
 
-  <main role="main">
-    <section id="products" class="product-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Products</h2>
-          <p>Innovative solutions developed at Marian College Kuttikkanam as part of the Mozilla Responsible Computing
-            Challenge</p>
-        </div>
-        <div class="row">
-          <!-- WebEase Product -->
-          <div class="col-md-12 mb-5">
-            <div class="product-card">
-              <div class="product-header">
-                <h2>WebEase</h2>
-                <span class="badge-patent">Patented by Central Government of India</span>
-              </div>
-              <div class="product-body">
-                <p>WebEase is a lightweight, customizable accessibility widget built using vanilla JavaScript and CSS.
-                  It provides essential accessibility features such as text size adjustment, color inversion, high
-                  contrast mode, and image alt text validation for users. You can easily integrate this widget into any
-                  website using a simple CDN link.</p>
-                <a href="https://github.com/jerit-baiju/WebEase" target="_blank" class="github-link">
-                  <i class="fab fa-github"></i> View on GitHub
-                </a>
+      .product-details h4 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
 
-                <div class="product-details">
-                  <h3>Lighthouse Performance</h3>
-                  <p>Unlike many premium accessibility widgets that can negatively impact your site's performance
-                    metrics,
-                    WebEase is designed to:</p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Improve Lighthouse scores by automatically fixing common accessibility issues</li>
-                        <li>Enhance SEO performance through proper semantic structure and image optimization</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Maintain fast page loading with minimal impact on performance</li>
-                        <li>Fix accessibility violations that premium widgets often miss or even create</li>
-                      </ul>
-                    </div>
-                  </div>
+      /* Ensure responsive layout */
+      @media (max-width: 991px) {
+        .hero-title {
+          font-size: 2.8rem;
+        }
 
-                  <h3>Key Features</h3>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Text Size Control: Increase or decrease the text size for better readability</li>
-                        <li>Color Inversion: Invert colors for users with visual impairments</li>
-                        <li>High Contrast Mode: Toggle between normal and high contrast themes</li>
-                        <li>Image Alt Text Checker: Identify and report missing alt attributes</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Automatic Fixes: Adds missing alt text, improves heading structure</li>
-                        <li>Touch Target Optimization: Ensures elements meet size requirements</li>
-                        <li>Customizable Position: Set the widget in any corner of the screen</li>
-                        <li>Lightweight Implementation: Minimal impact on page performance</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        .hero-subtitle {
+          font-size: 1.2rem;
+        }
 
-                <div class="product-details">
-                  <h3>Quick Installation</h3>
-                  <p>You can integrate the widget into any webpage by including the following JavaScript snippet. You
-                    can
-                    either download the script or link to the hosted version.</p>
+        .product-section {
+          padding: 70px 0;
+        }
+      }
 
-                  <div class="row mt-4">
-                    <div class="col-md-12">
-                      <div style="background: #f8f9fa; border-radius: 10px; padding: 25px; position: relative;">
-                        <h4 style="margin-top: 0;">Using CDN (Recommended)</h4>
-                        <p>Include the following <code>&lt;script&gt;</code> tag just before closing the
-                          <code>&lt;/body&gt;</code> tag in your HTML:
-                        </p>
-                        <div class="code-block">
-                          <code>&lt;script src="https://cdn.jsdelivr.net/gh/jerit-baiju/WebEase@latest/script.js"&gt;&lt;/script&gt;</code>
-                        </div>
-                        <div
-                          style="position: absolute; top: 25px; right: 25px; background: var(--secondary-color); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">
-                          RECOMMENDED
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      @media (max-width: 768px) {
+        .hero-section {
+          min-height: 400px;
+        }
 
-                  <h3 class="mt-5">Customization Options</h3>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h4>Widget Position</h4>
-                      <p>You can customize the position of the accessibility toggle button by adding a position
-                        attribute to
-                        the script tag:</p>
-                      <div class="code-block">
-                        <code>&lt;script src="https://cdn.jsdelivr.net/gh/jerit-baiju/WebEase@latest/script.js" position="bottom-left"&gt;&lt;/script&gt;</code>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <h4>Available Positions</h4>
-                      <div class="position-options">
-                        <span class="position-option"
-                          style="background: var(--accent-color); color: white;">top-left</span>
-                        <span class="position-option"
-                          style="background: var(--accent-color); color: white;">top-right</span>
-                        <span class="position-option"
-                          style="background: var(--accent-color); color: white;">bottom-left</span>
-                        <span class="position-option"
-                          style="background: var(--accent-color); color: white;">bottom-right (default)</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        .hero-title {
+          font-size: 2.2rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1rem;
+        }
+
+        .product-section {
+          padding: 50px 0;
+        }
+
+        .product-body {
+          padding: 25px;
+        }
+
+        .hero-buttons {
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .section-title h2 {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero-section {
+          min-height: 350px;
+        }
+
+        .hero-title {
+          font-size: 1.8rem;
+        }
+
+        .product-section {
+          padding: 40px 0;
+        }
+
+        .product-body {
+          padding: 20px;
+        }
+
+        .section-title h2 {
+          font-size: 1.7rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: white">
+      <div class="container ps-8">
+        <a class="navbar-brand" href="index.html">
+          <div style="display: flex; align-items: center; justify-content: flex-start">
+            <img src="images/marian-logo.jpg" height="60px" alt="Marian logo" class="img-fluid" style="max-height: 60px" />
+            <img src="images/logo.png" height="30px" alt="logo of Mozilla RCC" class="img-fluid" style="max-height: 30px" />
           </div>
+        </a>
 
-          <!-- Eye Blink Navigation System -->
-          <div class="col-md-12">
-            <div class="product-card">
-              <div class="product-header">
-                <h2>Eye Blink Navigation System</h2>
-                <span class="badge-dev">Under Development</span>
-              </div>
-              <div class="product-body">
-                <p>The Eye Blink Navigation System is an innovative solution designed to help paralyzed individuals who
-                  can only blink their eyes communicate effectively. This system displays various options on screen and
-                  allows users to select items through eye blinks, enabling those with severe mobility limitations to
-                  interact with digital interfaces.</p>
+        <button
+          class="btn1 navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="icon">
+            <svg viewBox="0 0 175 80" width="40" height="40">
+              <rect width="60" height="10" fill="#f0f0f0" rx="10"></rect>
+              <rect y="30" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
+              <rect y="60" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
+            </svg>
+          </span>
+        </button>
 
-                <div class="product-details">
-                  <h3>How It Works</h3>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Real-time eye blink detection using computer vision</li>
-                        <li>User-friendly interface with clearly displayed options</li>
-                        <li>Customizable selection timing for different user needs</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Option categories: communication, entertainment, comfort</li>
-                        <li>Audio feedback for selection confirmation</li>
-                        <li>Simple calibration process for reliable detection</li>
-                      </ul>
-                    </div>
-                  </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" style="color: black">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link" style="color: black">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="deliverables.html" class="nav-link" style="color: black">Deliverables</a>
+            </li>
+            <li class="nav-item">
+              <a href="course.html" class="nav-link" style="color: black">Course</a>
+            </li>
+            <li class="nav-item active">
+              <a href="products.html" class="nav-link" style="color: orange">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="event.html" class="nav-link" style="color: black">Events</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link" style="color: black">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="resources.html" class="nav-link" style="color: black">Resources</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Innovative Accessibility Solutions</h1>
+        <p class="hero-subtitle">
+          Discover our patented accessibility products designed to make the digital world more inclusive and equitable for everyone
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="hero-btn hero-btn-primary">Explore Products</a>
+          <a href="https://jerit.in" target="_blank" class="hero-btn hero-btn-secondary">Contact Developer</a>
+        </div>
+      </div>
+    </section>
 
-                  <h3>Key Benefits</h3>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Enables communication for people with severe paralysis</li>
-                        <li>Requires minimal physical ability (only eye movement)</li>
-                        <li>Affordable alternative to expensive eye-tracking systems</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <ul class="feature-list">
-                        <li>Customizable to individual user needs</li>
-                        <li>Potential integration with smart home systems</li>
-                        <li>Open-source development for continuous improvement</li>
-                      </ul>
-                    </div>
-                  </div>
+    <main role="main">
+      <section id="products" class="product-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Products</h2>
+            <p>Innovative solutions developed at Marian College Kuttikkanam as part of the Mozilla Responsible Computing Challenge</p>
+          </div>
+          <div class="row">
+            <!-- WebEase Product -->
+            <div class="col-md-12 mb-5">
+              <div class="product-card">
+                <div class="product-header">
+                  <h2>WebEase</h2>
+                  <span class="badge-patent">Patented by Central Government of India</span>
                 </div>
-
-                <h3 class="mt-5">Video Demonstration</h3>
-                <p>Watch our eye blink detection system in action:</p>
-                <div class="video-container">
-                  <video controls preload="metadata" playsinline crossorigin="anonymous" poster="videos/thumbnail.png">
-                    <source src="videos/demo.mp4" type="video/mp4" />
-                    <!-- Fallback for browsers that don't support HTML5 video -->
-                    <p>Your browser doesn't support HTML5 video.
-                      <a href="videos/demo.mp4" download>Download the video</a> to view it on your device or
-                      <a href="https://jerit.in" target="_blank">contact the developer</a> for assistance.
-                    </p>
-                  </video>
-                </div>
-
-                <!-- Instructions for viewing the video -->
-                <p class="mt-2 text-muted" style="font-size: 0.9rem;">
-                  <i class="fas fa-info-circle"></i> Click the play button to start the video. The video will work in
-                  modern browsers including Safari, Chrome, Firefox, and Edge.
-                </p>
-
-                <div class="mt-4">
-                  <p><strong>Project Status:</strong> This project is currently under active development. We are working
-                    on improving the accuracy of blink detection and expanding the feature set to make it more versatile
-                    for users with different needs.</p>
-                  <p>For more information about the development of this system or to participate in testing, please
-                    contact the developer directly at <a href="https://jerit.in" target="_blank">jerit.in</a>.</p>
-                  <a href="https://github.com/marian-rcc/eye-blink-navigation" target="_blank" class="github-link">
+                <div class="product-body">
+                  <p>
+                    WebEase is a lightweight, customizable accessibility widget built using vanilla JavaScript and CSS. It provides
+                    essential accessibility features such as text size adjustment, color inversion, high contrast mode, and image alt
+                    text validation for users. You can easily integrate this widget into any website using a simple CDN link.
+                  </p>
+                  <a href="https://github.com/Jerit-Baiju/a11y-widget" target="_blank" class="github-link">
                     <i class="fab fa-github"></i> View on GitHub
                   </a>
+
+                  <div class="product-details">
+                    <h3>Lighthouse Performance</h3>
+                    <p>
+                      Unlike many premium accessibility widgets that can negatively impact your site's performance metrics, WebEase is
+                      designed to:
+                    </p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Improve Lighthouse scores by automatically fixing common accessibility issues</li>
+                          <li>Enhance SEO performance through proper semantic structure and image optimization</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Maintain fast page loading with minimal impact on performance</li>
+                          <li>Fix accessibility violations that premium widgets often miss or even create</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h3>Key Features</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Text Size Control: Increase or decrease the text size for better readability</li>
+                          <li>Color Inversion: Invert colors for users with visual impairments</li>
+                          <li>High Contrast Mode: Toggle between normal and high contrast themes</li>
+                          <li>Image Alt Text Checker: Identify and report missing alt attributes</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Automatic Fixes: Adds missing alt text, improves heading structure</li>
+                          <li>Touch Target Optimization: Ensures elements meet size requirements</li>
+                          <li>Customizable Position: Set the widget in any corner of the screen</li>
+                          <li>Lightweight Implementation: Minimal impact on page performance</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="product-details">
+                    <h3>Quick Installation</h3>
+                    <p>
+                      You can integrate the widget into any webpage by including the following JavaScript snippet. You can either
+                      download the script or link to the hosted version.
+                    </p>
+
+                    <div class="row mt-4">
+                      <div class="col-md-12">
+                        <div style="background: #f8f9fa; border-radius: 10px; padding: 25px; position: relative">
+                          <h4 style="margin-top: 0">Using CDN (Recommended)</h4>
+                          <p>
+                            Include the following <code>&lt;script&gt;</code> tag just before closing the
+                            <code>&lt;/body&gt;</code> tag in your HTML:
+                          </p>
+                          <div class="code-block">
+                            <code
+                              >&lt;script
+                              src="https://cdn.jsdelivr.net/gh/jerit-baiju/WebEase@latest/script.js"&gt;&lt;/script&gt;</code
+                            >
+                          </div>
+                          <div
+                            style="
+                              position: absolute;
+                              top: 25px;
+                              right: 25px;
+                              background: var(--secondary-color);
+                              color: white;
+                              padding: 5px 15px;
+                              border-radius: 20px;
+                              font-size: 0.8rem;
+                              font-weight: 500;
+                            ">
+                            RECOMMENDED
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 class="mt-5">Customization Options</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4>Widget Position</h4>
+                        <p>
+                          You can customize the position of the accessibility toggle button by adding a position attribute to the
+                          script tag:
+                        </p>
+                        <div class="code-block">
+                          <code
+                            >&lt;script src="https://cdn.jsdelivr.net/gh/jerit-baiju/WebEase@latest/script.js"
+                            position="bottom-left"&gt;&lt;/script&gt;</code
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h4>Available Positions</h4>
+                        <div class="position-options">
+                          <span class="position-option" style="background: var(--accent-color); color: white">top-left</span>
+                          <span class="position-option" style="background: var(--accent-color); color: white">top-right</span>
+                          <span class="position-option" style="background: var(--accent-color); color: white">bottom-left</span>
+                          <span class="position-option" style="background: var(--accent-color); color: white"
+                            >bottom-right (default)</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Eye Blink Navigation System -->
+            <div class="col-md-12">
+              <div class="product-card">
+                <div class="product-header">
+                  <h2>Eye Blink Navigation System</h2>
+                  <span class="badge-dev">Under Development</span>
+                </div>
+                <div class="product-body">
+                  <p>
+                    The Eye Blink Navigation System is an innovative solution designed to help paralyzed individuals who can only blink
+                    their eyes communicate effectively. This system displays various options on screen and allows users to select items
+                    through eye blinks, enabling those with severe mobility limitations to interact with digital interfaces.
+                  </p>
+
+                  <div class="mt-4">
+                    <p>
+                      <strong>Project Status:</strong> This project is currently under active development. We are working on improving
+                      the accuracy of blink detection and expanding the feature set to make it more versatile for users with different
+                      needs.
+                    </p>
+                    <p>
+                      For more information about the development of this system or to participate in testing, please contact the
+                      developer directly at <a href="https://jerit.in" target="_blank">jerit.in</a>.
+                    </p>
+                    <a href="https://github.com/Jerit-Baiju/blink_detector/" target="_blank" class="github-link">
+                      <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                  </div>
+                  <h3 class="mt-5">Video Demonstration</h3>
+                  <p>Watch our eye blink detection system in action:</p>
+                  <div class="video-container">
+                    <video controls preload="metadata" playsinline crossorigin="anonymous" poster="videos/thumbnail.png">
+                      <source src="videos/demo.mp4" type="video/mp4" />
+                      <!-- Fallback for browsers that don't support HTML5 video -->
+                      <p>
+                        Your browser doesn't support HTML5 video. <a href="videos/demo.mp4" download>Download the video</a> to view
+                        it on your device or <a href="https://jerit.in" target="_blank">contact the developer</a> for assistance.
+                      </p>
+                    </video>
+                  </div>
+
+                  <!-- Instructions for viewing the video -->
+                  <p class="mt-2 text-muted" style="font-size: 0.9rem">
+                    <i class="fas fa-info-circle"></i> Click the play button to start the video. The video will work in modern
+                    browsers including Safari, Chrome, Firefox, and Edge.
+                  </p>
+                  <div class="product-details">
+
+                    <h3>How It Works</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Real-time eye blink detection using computer vision</li>
+                          <li>User-friendly interface with clearly displayed options</li>
+                          <li>Customizable selection timing for different user needs</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Option categories: communication, entertainment, comfort</li>
+                          <li>Audio feedback for selection confirmation</li>
+                          <li>Simple calibration process for reliable detection</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h3>Key Benefits</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Enables communication for people with severe paralysis</li>
+                          <li>Requires minimal physical ability (only eye movement)</li>
+                          <li>Affordable alternative to expensive eye-tracking systems</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="feature-list">
+                          <li>Customizable to individual user needs</li>
+                          <li>Potential integration with smart home systems</li>
+                          <li>Open-source development for continuous improvement</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="cta-section"
-      style="background: var(--primary-color); padding: 80px 0; color: white; text-align: center;">
-      <div class="container">
-        <h2 style="margin-bottom: 25px; font-weight: 600;">Interested in our accessibility solutions?</h2>
-        <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem;">We're always looking for collaborators and
-          partners to help us make the digital world more accessible.</p>
-        <a href="https://jerit.in" target="_blank" class="hero-btn hero-btn-primary"
-          style="display: inline-block;">Contact the Developer</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="ftco-footer ftco-section img">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-md-4">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">About Us</h2>
-            <p>The Marian Mozilla RCC Project on Equitable Digital Access aims to ensure digital accessibility for
-              persons with disabilities.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Contact Info</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li><span class="icon icon-map-marker"></span><span class="text">Marian College Kuttikkanam
-                    Autonomous</span></li>
-                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@marianrcc.org</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Quick Links</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="course.html">Course</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li><a href="products.html">Products</a></li>
-                  <li><a href="event.html">Events</a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>
-            Copyright &copy;
-            <script>document.write(new Date().getFullYear());</script> All rights reserved | Marian RCC
+      <!-- Call to Action Section -->
+      <section class="cta-section" style="background: var(--primary-color); padding: 80px 0; color: white; text-align: center">
+        <div class="container">
+          <h2 style="margin-bottom: 25px; font-weight: 600">Interested in our accessibility solutions?</h2>
+          <p style="max-width: 700px; margin: 0 auto 30px; font-size: 1.2rem">
+            We're always looking for collaborators and partners to help us make the digital world more accessible.
           </p>
+          <a href="https://jerit.in" target="_blank" class="hero-btn hero-btn-primary" style="display: inline-block"
+            >Contact the Developer</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="ftco-footer ftco-section img">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About Us</h2>
+              <p>
+                The Marian Mozilla RCC Project on Equitable Digital Access aims to ensure digital accessibility for persons with
+                disabilities.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Contact Info</h2>
+              <div class="block-23 mb-3">
+                <ul>
+                  <li><span class="icon icon-map-marker"></span><span class="text">Marian College Kuttikkanam Autonomous</span></li>
+                  <li>
+                    <a href="#"><span class="icon icon-envelope"></span><span class="text">info@marianrcc.org</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | Marian RCC
+            </p>
+          </div>
         </div>
       </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+      </svg>
     </div>
-  </footer>
+    <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+      integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+      crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-        stroke="#F96D00" />
-    </svg>
-  </div>
-  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
-    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
-    crossorigin="anonymous"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- WebEase Accessibility Widget -->
-  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/WebEase@latest/script.js"></script>
-
-</body>
-
+    <!-- WebEase Accessibility Widget -->
+    <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/WebEase@latest/script.js"></script>
+  </body>
 </html>
