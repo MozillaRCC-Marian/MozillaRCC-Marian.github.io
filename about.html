@@ -53,7 +53,7 @@
   <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
   <link rel="stylesheet" href="css/jquery.timepicker.css">
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
@@ -83,194 +83,61 @@
     }
     </script>
 
-  <style>
-    .btn1 {
-      width: 70px;
-      height: 40px;
-      border: none;
-      transition: all 0.5s ease-in-out;
-      font-size: 10px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      background: #040f16;
-      color: #f5f5f5;
-    }
-
-    .btn1:hover {
-      box-shadow: 0 0 20px 0px #2e2e2e3a;
-    }
-
-    .btn1 .icon {
-      position: absolute;
-      height: 40px;
-      width: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.5s;
-    }
-
-    .btn1:hover .icon {
-      width: 70px;
-    }
-
-    .btn1:hover .text {
-      transition: all 0.5s;
-      opacity: 0;
-    }
-
-    .btn1:focus,
-    .navbar-toggler:focus {
-      outline: 2px solid #007bff;
-      outline-offset: 2px;
-      border-radius: 4px;
-      transition: none;
-    }
-
-    .btn1:active .icon {
-      transform: scale(0.85);
-    }
-
-
-    .hero-wrap .col-md-7 {
-      margin-top: -50px;
-    }
-  </style>
-
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg fixed-top" id="ftco-navbar" style="background-color: white;">
+    <div class="container ps-8">
+      <a class="navbar-brand" href="index.html">
+        <div style="display: flex; align-items: center; justify-content: flex-start;">
+          <img src="images/marian-logo.jpg" height="60px" alt="Marian logo" class="img-fluid"
+            style="max-height: 60px;">
+          <img src="images/logo.png" height="30px" alt="logo of Mozilla RCC" class="img-fluid"
+            style="max-height: 30px;">
+        </div>
+      </a>
 
-  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
+      <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon">
+          <svg viewBox="0 0 175 80" width="40" height="40">
+            <rect width="60" height="10" fill="#f0f0f0" rx="10"></rect>
+            <rect y="30" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
+            <rect y="60" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
+          </svg>
+        </span>
+      </button>
 
-  <script>
-    function moveAccessibilityWidget() {
-      const widgetButton = document.querySelector("#accessibility-toggle");
-      const widgetPanel = document.querySelector(".a11y-widget-container");
-
-      if (widgetButton) {
-        widgetButton.style.position = "fixed";
-        widgetButton.style.right = "20px";
-        widgetButton.style.left = "auto";
-        widgetButton.style.bottom = "20px";
-        widgetButton.style.zIndex = "9999";
-      }
-
-      if (widgetPanel) {
-        widgetPanel.style.position = "fixed";
-        widgetPanel.style.right = "20px";  // Keep it on the right
-        widgetPanel.style.left = "auto";  // Remove left positioning
-        widgetPanel.style.bottom = "60px";  // Adjust height
-        widgetPanel.style.maxWidth = "320px";
-        widgetPanel.style.transform = "none";
-      }
-    }
-
-    // Keep forcing the widget to stay on the right
-    const forcePositionInterval = setInterval(() => {
-      moveAccessibilityWidget();
-    }, 1000);
-
-    // Stop enforcing after 10 seconds
-    setTimeout(() => {
-      clearInterval(forcePositionInterval);
-    }, 10000);
-  </script>
-
-  <style>
-    /* Accessibility Widget on the Right */
-    .a11y-widget-container {
-      position: fixed !important;
-      right: 20px !important;
-      left: auto !important;
-      bottom: 60px !important;
-      max-width: 320px !important;
-      transform: none !important;
-    }
-
-    /* Widget Button on the Right */
-    #accessibility-toggle {
-      right: 20px !important;
-      left: auto !important;
-      bottom: 20px !important;
-      position: fixed !important;
-      z-index: 9999 !important;
-    }
-  </style>
-
-  <!-- Chatling Chatbot Script -->
-  <script>
-    window.chtlConfig = { chatbotId: "7395624657" }
-  </script>
-  <script async data-id="7395624657" id="chatling-embed-script" type="text/javascript"
-    src="https://chatling.ai/js/embed.js"></script>
-
-  <style>
-    /* Chatbot on the Left */
-    #chatling-embed-script {
-      position: fixed !important;
-      left: 20px !important;
-      right: auto !important;
-      bottom: 20px !important;
-      z-index: 9999 !important;
-    }
-  </style>
-
-
-<nav class="navbar navbar-expand-lg fixed-top" id="ftco-navbar" style="background-color: white;">
-  <div class="container ps-8">
-    <a class="navbar-brand" href="index.html">
-      <div style="display: flex; align-items: center; justify-content: flex-start;">
-        <img src="images/marian-logo.jpg" height="60px" alt="Marian logo" class="img-fluid"
-          style="max-height: 60px;">
-        <img src="images/logo.png" height="30px" alt="logo of Mozilla RCC" class="img-fluid"
-          style="max-height: 30px;">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" style="color: black;">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="about.html" class="nav-link" style="color: orange">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="deliverables.html" class="nav-link" style="color: black;">Deliverables</a>
+          </li>
+          <li class="nav-item">
+            <a href="course.html" class="nav-link" style="color: black;">Course</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link" style="color: black;">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="event.html" class="nav-link" style="color: black;">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link" style="color: black;">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="resources.html" class="nav-link" style="color: black;">Resources</a>
+          </li>
+        </ul>
       </div>
-    </a>
-
-    <button class="btn1 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="icon">
-        <svg viewBox="0 0 175 80" width="40" height="40">
-          <rect width="60" height="10" fill="#f0f0f0" rx="10"></rect>
-          <rect y="30" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
-          <rect y="60" width="60" height="10" fill="#f0f0f0" rx="10"></rect>
-        </svg>
-      </span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link" style="color: black;">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a href="about.html" class="nav-link" style="color: orange">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="deliverables.html" class="nav-link" style="color: black;">Deliverables</a>
-        </li>
-        <li class="nav-item">
-          <a href="course.html" class="nav-link" style="color: black;">Course</a>
-        </li>
-        <li class="nav-item">
-          <a href="products.html" class="nav-link" style="color: black;">Products</a>
-        </li>
-        <li class="nav-item">
-          <a href="event.html" class="nav-link" style="color: black;">Events</a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link" style="color: black;">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="resources.html" class="nav-link" style="color: black;">Resources</a>
-        </li>
-      </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 
   <main role="main">
 
@@ -404,6 +271,8 @@
         stroke="#F96D00" />
     </svg></div>
 
+  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
+
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -419,11 +288,22 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-
+  <!-- Chatling Chatbot Script -->
+  <script>
+    window.chtlConfig = { chatbotId: "7395624657" }
+  </script>
+  <script async data-id="7395624657" id="chatling-embed-script" type="text/javascript"
+    src="https://chatling.ai/js/embed.js"></script>
 </body>
 
 </html>

@@ -33,183 +33,21 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
-
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
-
   <link rel="stylesheet" href="css/aos.css">
-
   <link rel="stylesheet" href="css/ionicons.min.css">
 
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
   <link rel="stylesheet" href="css/jquery.timepicker.css">
 
 
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/icomoon.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .btn1 {
-      width: 70px;
-      height: 40px;
-      border: none;
-      transition: all 0.5s ease-in-out;
-      font-size: 10px;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      background: #040f16;
-      color: #f5f5f5;
-    }
-
-    .btn1:hover {
-      box-shadow: 0 0 20px 0px #2e2e2e3a;
-    }
-
-    .btn1 .icon {
-      position: absolute;
-      height: 40px;
-      width: 70px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.5s;
-    }
-
-    .btn1:hover .icon {
-      width: 70px;
-    }
-
-    .btn1:hover .text {
-      transition: all 0.5s;
-      opacity: 0;
-    }
-
-    .btn1:focus,
-    .navbar-toggler:focus {
-      outline: 2px solid #007bff;
-      outline-offset: 2px;
-      border-radius: 4px;
-      transition: none;
-    }
-
-    .btn1:active .icon {
-      transform: scale(0.85);
-    }
-
-
-    .hero-wrap .col-md-7 {
-      margin-top: -50px;
-    }
-
-
-    .card:hover {
-      transform: translateY(-5px);
-      transition: all 0.3s ease;
-    }
-
-    .brochure-btn {
-      background-color: rgb(255, 94, 0);
-      border: none;
-      padding: 12px 25px;
-      font-size: 16px;
-      border-radius: 5px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .brochure-btn:hover {
-      background-color: rgb(230, 85, 0);
-      color: white;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
-  </style>
-
 </head>
 
 <body>
-
-  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
-
-  <script>
-    function moveAccessibilityWidget() {
-      const widgetButton = document.querySelector("#accessibility-toggle");
-      const widgetPanel = document.querySelector(".a11y-widget-container");
-
-      if (widgetButton) {
-        widgetButton.style.position = "fixed";
-        widgetButton.style.right = "20px";
-        widgetButton.style.left = "auto";
-        widgetButton.style.bottom = "20px";
-        widgetButton.style.zIndex = "9999";
-      }
-
-      if (widgetPanel) {
-        widgetPanel.style.position = "fixed";
-        widgetPanel.style.right = "20px";  // Keep it on the right
-        widgetPanel.style.left = "auto";  // Remove left positioning
-        widgetPanel.style.bottom = "60px";  // Adjust height
-        widgetPanel.style.maxWidth = "320px";
-        widgetPanel.style.transform = "none";
-      }
-    }
-
-    // Keep forcing the widget to stay on the right
-    const forcePositionInterval = setInterval(() => {
-      moveAccessibilityWidget();
-    }, 1000);
-
-    // Stop enforcing after 10 seconds
-    setTimeout(() => {
-      clearInterval(forcePositionInterval);
-    }, 10000);
-  </script>
-
-  <style>
-    /* Accessibility Widget on the Right */
-    .a11y-widget-container {
-      position: fixed !important;
-      right: 20px !important;
-      left: auto !important;
-      bottom: 60px !important;
-      max-width: 320px !important;
-      transform: none !important;
-    }
-
-    /* Widget Button on the Right */
-    #accessibility-toggle {
-      right: 20px !important;
-      left: auto !important;
-      bottom: 20px !important;
-      position: fixed !important;
-      z-index: 9999 !important;
-    }
-  </style>
-
-  <!-- Chatling Chatbot Script -->
-  <script>
-    window.chtlConfig = { chatbotId: "7395624657" }
-  </script>
-  <script async data-id="7395624657" id="chatling-embed-script" type="text/javascript"
-    src="https://chatling.ai/js/embed.js"></script>
-
-  <style>
-    /* Chatbot on the Left */
-    #chatling-embed-script {
-      position: fixed !important;
-      left: 20px !important;
-      right: auto !important;
-      bottom: 20px !important;
-      z-index: 9999 !important;
-    }
-  </style>
-
-
-  <header role="banner">
 
     <nav class="navbar navbar-expand-lg fixed-top" id="ftco-navbar" style="background-color: white;">
       <div class="container">
@@ -258,12 +96,10 @@
       </div>
     </nav>
 
-  </header>
 
-  <main role="main">
 
     <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
-      <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
         <div class="col-md-7 ftco-animate text-center" data-scrollax="properties: { translateY: '70%' }">
           <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"
             style="color: rgb(255, 94, 0);">
@@ -717,10 +553,6 @@
           margin-bottom: 8px;
         }
       </style>
-
-  </main>
-
-
   <footer class="ftco-footer ftco-section img">
     <div class="overlay"></div>
     <div class="container">
@@ -781,13 +613,21 @@
 
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
       <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
       <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
         stroke="#F96D00" />
     </svg></div>
 
 
+  <script src="https://cdn.jsdelivr.net/gh/jerit-baiju/a11y-widget@latest/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -807,6 +647,13 @@
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
+
+  <!-- Chatling Chatbot Script -->
+  <script>
+    window.chtlConfig = { chatbotId: "7395624657" }
+  </script>
+  <script async data-id="7395624657" id="chatling-embed-script" type="text/javascript"
+    src="https://chatling.ai/js/embed.js"></script>
 </body>
 
 </html>
