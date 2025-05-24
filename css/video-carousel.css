@@ -1,0 +1,98 @@
+/* Video Carousel Styles */
+.video-carousel-container {
+  position: relative;
+}
+
+.video-player-container {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+}
+
+.carousel-video {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  max-height: 70vh;
+  margin: 0 auto;
+}
+
+/* Handle portrait videos */
+.video-player-container.portrait .carousel-video {
+  width: auto;
+  height: 70vh;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Owl Carousel Custom Styles */
+.owl-carousel .owl-item {
+  padding: 10px;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.owl-prev, .owl-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 94, 0, 0.8) !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  font-size: 20px !important;
+  margin: 0 15px !important;
+  pointer-events: all;
+}
+
+.owl-prev:hover, .owl-next:hover {
+  background-color: rgba(255, 94, 0, 1) !important;
+}
+
+/* Center the video in the carousel container */
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+
+.video-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Style video controls */
+.carousel-video::-webkit-media-controls-panel {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-video {
+    height: auto;
+    max-height: 60vh;
+  }
+  
+  .owl-prev, .owl-next {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px !important;
+  }
+
+  .video-player-container.portrait .carousel-video {
+    height: 50vh;
+  }
+}
